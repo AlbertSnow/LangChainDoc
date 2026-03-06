@@ -1,0 +1,6 @@
+pipelines:
+  crawl: true
+  parse: true
+  signals: true
+  summarize: true
+  report: true

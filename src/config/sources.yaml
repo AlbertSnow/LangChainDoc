@@ -1,0 +1,16 @@
+sources:
+  - name: "custom_sources"
+    type: "custom"
+    enabled: true
+    urls:
+      - "https://example.com/investment-news"
+  - name: "public_news"
+    type: "news"
+    enabled: true
+    urls:
+      - "https://example.com/market"
+  - name: "sec_filings"
+    type: "filings"
+    enabled: true
+    urls:
+      - "https://example.com/filings"
