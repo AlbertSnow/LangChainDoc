@@ -1,7 +1,12 @@
 from pathlib import Path
 from typing import Dict, Any, List
+import sys
 
 import yaml
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from src.crawlers.custom_crawler import crawl_custom
 from src.crawlers.filings_crawler import crawl_filings
@@ -13,7 +18,6 @@ from src.summarizers.basic import summarize_text
 from src.storage.local_store import write_jsonl, write_text
 
 
-ROOT = Path(__file__).resolve().parents[1]
 CONFIG_DIR = ROOT / "src" / "config"
 DATA_DIR = ROOT / "data"
 

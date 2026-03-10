@@ -3,7 +3,7 @@ sources:
     type: "custom"
     enabled: true
     urls:
-      - "https://example.com/investment-news"
+      - "https://www.baidu.com"
   - name: "public_news"
     type: "news"
     enabled: true
